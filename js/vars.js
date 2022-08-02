@@ -62,6 +62,156 @@
 //   return message;
 // }
 
-for (let i = 50; i >= 0; i -= 5) {
-  console.log(i);
-}
+// for (let i = 50; i >= 0; i -= 5) {
+//   console.log(i);
+// }
+
+// function checkIfCanAccessContent(subType) {
+//   const canAccessContent = (subType = 'pro' || 'vip');
+//   // Change this line
+
+//   return canAccessContent;
+// }
+
+// function getSubstring(string, length) {
+//   const substring = getSubstring(7, getSubstring.length); // Change this lin
+
+//   return substring;
+// }
+
+// function multiply(a, b) {
+//   return a * b;
+// }
+
+// let clientCounter = 18;
+// const maxClients = 25;
+
+// while (clientCounter < maxClients) {
+//   console.log(clientCounter);
+//   clientCounter += 1;
+// }
+
+// for (let i = 0; i <= 20; i += 3) {
+//   console.log(i);
+// }
+
+// const target = 3;
+// let sum = 0;
+
+// for (let i = 0; i <= target; i += 1) {
+//   sum += i;
+// }
+
+// console.log(sum);
+
+// const clients = [
+//   'Tony',
+//   'Poly',
+//   'Anthony',
+//   'Josh',
+//   'smith',
+//   'Kate',
+//   'Pat',
+//   'AJ',
+// ];
+
+// const clientNameToFind = 'AJ';
+// let message;
+
+// for (const client of clients) {
+//   if (client === clientNameToFind) {
+//     message = 'Success';
+//     break;
+//   }
+//   message = 'Клиента с таким именем нету в базе данных!';
+// }
+// console.log(message);
+
+// function multiply(x, y, z) {
+//   console.log(`Result of multiply: ${x * y * z}`);
+// }
+
+// multiply(13, 11, 9);
+
+// function multiply() {
+//   let total = 3;
+
+//   for (const argument of arguments) {
+//     total *= argument;
+//   }
+//   return total;
+// }
+
+// console.log(multiply(1, 2, 3));
+// console.log(multiply(2, 4, 6));
+
+// function fn() {
+//   // В переменной args будет полноценный массив
+//   const args = Array.from(arguments);
+// }
+
+// function withdraw(amount, balance) {
+//   if (amount === 0) {
+//     console.log('Your amount should be more then 0');
+//     return;
+//   }
+//   if (amount > balance) {
+//     console.log('You dont have enough money');
+//     return;
+//   }
+//   console.log('Success');
+// }
+
+// withdraw(0, 400);
+// withdraw(400, 200);
+// withdraw(450, 500);
+
+// function fnA() {
+//   console.log('Лог внуртри функции fnA до вызова fnB');
+//   fnB();
+//   console.log('Лог внуртри функции fnA после вызова fnB');
+// }
+
+// function fnB() {
+//   console.log('Лог внутри функции fnB');
+// }
+
+// console.log('Лог перед вызовом fnA');
+// fnA();
+// console.log('Лог после вызова fnA');
+
+// // "Лог перед вызовом fnA"
+// // "Лог внуртри функции fnA до вызова fnB"
+// // "Лог внутри функции fnB"
+// // "Лог внуртри функции fnA после вызова fnB"
+// // "Лог после вызова fnA"
+
+// const numbers = [11, 3, 4, 6, 74, 29, 88, 132, 31, 66];
+// let total = 0;
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(numbers[i]);
+
+//   if (numbers[i] % 2 !== 0) {
+//     console.log('Не Четное!');
+
+//     total += numbers[i];
+//   }
+// }
+
+// console.log('Total:', total);
+
+// const numbers = [11, 3, 4, 6, 74, 29, 88, 132, 31, 66];
+
+// let total = 0;
+
+// for (const number of numbers) {
+//   console.log(number);
+
+//   if (number % 2 !== 0) {
+//     console.log('Не четное');
+//     total += number;
+//   }
+// }
+
+// console.log('Total:', total);
