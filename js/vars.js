@@ -215,3 +215,31 @@
 // }
 
 // console.log('Total:', total);
+
+// const logins = ['m4ngoDoge', 'kiwidab3st', 'poly1scute', 'aj4xth3m4n'];
+// const loginToFind = 'poly1scute';
+// let message = '';
+
+// for (let i = 0; i < logins.length; i += 1) {
+//   const login = logins[i];
+
+//   if (login !== loginToFind) {
+//     message = `user ${loginToFind} not found`;
+//   } else {
+//     message = `user ${loginToFind} was found successfuly`;
+//     break;
+//   }
+// }
+
+// console.log(message);
+
+// const numbers = [51, 18, 13, 24, 7, 85, 19];
+// let smallestNumber = numbers[0];
+
+// for (const number of numbers) {
+//   if (number < smallestNumber) {
+//     smallestNumber = number;
+//   }
+// }
+
+// console.log('smallestNumber:', smallestNumber);
