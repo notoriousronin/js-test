@@ -243,3 +243,188 @@
 // }
 
 // console.log('smallestNumber:', smallestNumber);
+
+// const numbers = [22, 21, 292, 44, 32, 8, 99, 9, 12];
+// let smallestNumber = numbers[0];
+
+// for (const number of numbers) {
+//   if (number < smallestNumber) {
+//     smallestNumber = number;
+//   }
+// }
+
+// console.log('smallestNumber:', smallestNumber);
+
+// const numbers = [11, 23, 383, 66, 73, 13, 7, 2, 77, 829, 92, 99];
+// let smallestNumber = numbers[0];
+
+// for (const number of numbers) {
+//   if (number < smallestNumber) {
+//     smallestNumber = number;
+//   }
+// }
+
+// console.log('smallestNumber:', smallestNumber);
+
+// const friends = ['Poly', 'Mango', 'Ajax', 'Peter', 'Joe'];
+// // let string = ' ';
+
+// // for (const friend of friends) {
+// //   string += friend + ', ';
+// // }
+// // string = string.slice(0, string.length - 2);
+// const string = friends.join(', ');
+// console.log('my friends are:', string);
+
+// const string = 'JavaScript';
+// const letters = string.split('');
+// let invertedString = '';
+
+// console.log(letters);
+
+// for (const letter of letters) {
+//   console.log(letter);
+
+//   //   if (letter === letter.toLowerCase()) {
+//   //     console.log('Lower case Letter:', letter);
+
+//   //     invertedString += letter.toUpperCase();
+//   //   } else {
+//   //     console.log('Upper case letter:', letter);
+//   //     invertedString += letter / toLowerCase();
+//   //   }
+//   // }
+
+//   invertedString +=
+//     letter === letter.toLowerCase()
+//       ? letter.toUpperCase()
+//       : letter.toLowerCase();
+// }
+
+// console.log('invertedString:', invertedString);
+
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+// let total = 0;
+
+// const fruits = ['apple', 'peach', 'pear', 'banana'];
+
+// // Change code below this line
+// const lastElementIndex = fruits.length - 1;
+// const lastElement = fruits[3];
+// console.log(lastElement);
+// console.log(lastElementIndex);
+
+// function getExtremeElements(array) {
+//   // Change code below this line
+//   const firstElement = array[0];
+//   const lastElement = array[array.length - 1];
+
+//   return firstElement;
+
+//   // Change code above this line
+// }
+
+// getExtremeElements([1, 2, 3, 4, 5]);
+// // возвращает[(1, 5)];
+
+// getExtremeElements(['Earth', 'Mars', 'Venus']);
+// // возвращает ["Earth", "Venus"]
+
+// getExtremeElements(['apple', 'peach', 'pear', 'banana']);
+// // возвращает ["apple", "banana"]
+
+// function splitMessage(message, delimeter) {
+//   let words;
+//   // Change code below this line
+
+//   return message.split(' ');
+
+//   // Change code above this line
+//   return words;
+// }
+
+// splitMessage('Mango hurries to the train', ' ');
+// //возвращает ["Mango", "hurries", "to", "the", "train"]
+
+// splitMessage('Mango', '');
+// //["M", "a", "n", "g", "o"]
+
+// splitMessage('best_for_week', '_');
+// //["best", "for", "week"]
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   // Change code below this line
+
+//   let words = message.split(' ').length * pricePerWord;
+
+//   console.log(words);
+//   // Change code above this line
+// }
+
+// calculateEngravingPrice('JavaScript is in my blood', 10);
+// //возвращает 50
+
+// calculateEngravingPrice('JavaScript is in my blood', 20);
+// // возвращает 100
+
+// calculateEngravingPrice('Web-development is creative work', 40);
+// //возвращает 160
+
+// calculateEngravingPrice('Web-development is creative work', 20);
+// // возвращает 80
+
+// const planets = ['Earth', 'Mars', 'Venus'];
+
+// for (let i = 0; i < planets.length; i += 1) {
+//   console.log(planets[i]);
+// }
+
+// function findLongestWord(string) {
+//   // Change code below this line
+//   let stringSplit = string.split(' ');
+//   let longestWord = 0;
+
+//   for (i = 0; i < stringSplit.length; i += 1) {
+//     if (stringSplit[i].length > longestWord) {
+//       longestWord = stringSplit[i];
+//     }
+//   }
+//   console.log(longestWord);
+
+//   // Change code above this line
+// }
+
+// findLongestWord('The quick brown fox jumped over the lazy dog');
+// // jumped
+
+// findLongestWord('Google do a roll');
+// // google
+
+// findLongestWord('May the force be with you');
+// // force
+
+// findLongestWord();
+
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  // Change code below this line
+  for (const number of numbers) {
+    number.push(min, max);
+  }
+  console.log(numbers);
+  // Change code above this line
+  return numbers;
+}
+
+createArrayOfNumbers(1, 3);
+//[1, 2, 3]
+
+createArrayOfNumbers(14, 17);
+//[14, 15, 16, 17]
+
+createArrayOfNumbers(29, 34);
+//[29, 30, 31, 32, 33, 34]
+
+createArrayOfNumbers();
+//  min и max возвращает правильный массив
