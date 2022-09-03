@@ -2049,14 +2049,47 @@
 
 // const listItems = list.children;
 // console.log(listItems);
-const article = document.querySelector('.article');
-console.log(article.innerHTML);
+// const article = document.querySelector('.article');
+// console.log(article.innerHTML);
 
-const title = document.querySelector('.article .title');
-console.log(title.innerHTML);
+// const title = document.querySelector('.article .title');
+// console.log(title.innerHTML);
 
-const text = document.querySelector('.article .text');
-console.log(text.innerHTML);
+// const text = document.querySelector('.article .text');
+// console.log(text.innerHTML);
 
-const link = document.querySelector('.article .link');
-console.log(link.innerHTML);
+// const link = document.querySelector('.article .link');
+// console.log(link.innerHTML);
+
+// const button = document.querySelector('.btn');
+
+// const handleClick = event => {
+//   console.log('event: ', event);
+//   console.log('event type: ', event.type);
+//   console.log('currentTarget: ', event.currentTarget);
+// };
+
+// button.addEventListener('click', handleClick);
+
+// document.addEventListener('keydown', event => {
+//   console.log('Keydown: ', event);
+// });
+
+// document.addEventListener('keyup', event => {
+//   console.log('Keyup: ', event);
+// });
+
+// document.addEventListener('keydown', event => {
+//   console.log('key: ', event.key);
+//   console.log('code: ', event.code);
+// });
+
+const categoriesNumber = document.querySelectorAll('.item');
+console.log('Number of categories: ', categoriesNumber.length);
+
+categoriesNumber.forEach(item => {
+  const categoryTitle = item.querySelector('h2');
+  console.log('Category: ', categoryTitle.textContent);
+  const listsNumber = item.querySelectorAll('ul > li');
+  console.log('Elements: ', listsNumber.length);
+});
