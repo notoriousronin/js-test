@@ -2084,12 +2084,43 @@
 //   console.log('code: ', event.code);
 // });
 
-const categoriesNumber = document.querySelectorAll('.item');
-console.log('Number of categories: ', categoriesNumber.length);
+// const categoriesNumber = document.querySelectorAll('.item');
+// console.log('Number of categories: ', categoriesNumber.length);
 
-categoriesNumber.forEach(item => {
-  const categoryTitle = item.querySelector('h2');
-  console.log('Category: ', categoryTitle.textContent);
-  const listsNumber = item.querySelectorAll('ul > li');
-  console.log('Elements: ', listsNumber.length);
-});
+// categoriesNumber.forEach(item => {
+//   const categoryTitle = item.querySelector('h2');
+//   console.log('Category: ', categoryTitle.textContent);
+//   const listsNumber = item.querySelectorAll('ul > li');
+//   console.log('Elements: ', listsNumber.length);
+// });
+
+// Напишіть функцію each(array, callback), яка
+// першим параметром приймає масив, а другим - функцію,
+// яка застосовується до кожного елемента масиву.
+// Функція each повинна повернути новий масив, елементами
+// якого будуть результати виклику callback
+// callback функції повинна множити елементи на 2
+
+// function multiply(array, callback) {
+//   const resultArr = [];
+//   array.forEach(element => {
+//     resultArr.push(callback(element));
+//   });
+//   return resultArr;
+// }
+// console.log(multiply([2, 3, 6, 8], item => (item *= 5)));
+
+//Напишіть функцію savePassword(password), яка приймає
+//пароль і повертає внутрішню функцію, що приймає
+//рядок і повертає true, якщо рядок збігається із збереженим
+//паролем і false - якщо не збігається
+
+// function savePassword(password) {
+//   return function (userPassword) {
+//     return password === userPassword;
+//   };
+// }
+// const checkPassword = savePassword('12345qwerty');
+
+// console.log(checkPassword('12345qwerty'));
+// console.log(checkPassword('mango-poly'));
