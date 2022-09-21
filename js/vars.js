@@ -2225,3 +2225,54 @@
 //     return String(Value).padStart(2, 0);
 //   },
 // };
+
+import { students } from './students.js';
+
+let items = students;
+
+const studentTemplate = ({ name, score }) => `<li data-model="${score}">
+        <span>${name} - ${score}</span>
+        <button data-name="view">Modal</button>
+        <button data-name="delete">Delete</button>
+      </li>`;
+
+const refs = {
+  studentsList: document.querySelector('.students-list'),
+};
+
+const render = () => {
+  const list = items.map(student => studentTemplate(student)).join('');
+
+  refs.studentsList.innerHTML = '';
+  refs.studentsList.insertAdjacentHTML('beforeend', list);
+};
+
+const viewItem = model => {
+  console.log('view:', model);
+};
+const deleteItem = model => {
+  console.log('delete:', model);
+};
+
+const handleClick = e => {
+  if (e.target === e.currentTarget) return;
+
+  const parent = e.target.closest('li');
+  const action = e.target.dataset.name;
+  const model = parent.dataset.model;
+
+  switch (action) {
+    case 'view':
+      viewItem(model);
+      break;
+
+    case 'delete':
+      deleteItem(model);
+      break;
+  }
+};
+
+// console.log(students);
+render();
+
+refs.studentsList.addEventListener('click', handleClick);
