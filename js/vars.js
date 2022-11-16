@@ -2226,53 +2226,101 @@
 //   },
 // };
 
-import { students } from './students.js';
+// import { students } from './students.js';
 
-let items = students;
+// let items = students;
 
-const studentTemplate = ({ name, score }) => `<li data-model="${score}">
-        <span>${name} - ${score}</span>
-        <button data-name="view">Modal</button>
-        <button data-name="delete">Delete</button>
-      </li>`;
+// const studentTemplate = ({ name, score }) => `<li data-model="${score}">
+//         <span>${name} - ${score}</span>
+//         <button data-name="view">Modal</button>
+//         <button data-name="delete">Delete</button>
+//       </li>`;
 
-const refs = {
-  studentsList: document.querySelector('.students-list'),
-};
+// const refs = {
+//   studentsList: document.querySelector('.students-list'),
+// };
 
-const render = () => {
-  const list = items.map(student => studentTemplate(student)).join('');
+// const render = () => {
+//   const list = items.map(student => studentTemplate(student)).join('');
 
-  refs.studentsList.innerHTML = '';
-  refs.studentsList.insertAdjacentHTML('beforeend', list);
-};
+//   refs.studentsList.innerHTML = '';
+//   refs.studentsList.insertAdjacentHTML('beforeend', list);
+// };
 
-const viewItem = model => {
-  console.log('view:', model);
-};
-const deleteItem = model => {
-  console.log('delete:', model);
-};
+// const viewItem = model => {
+//   console.log('view:', model);
+// };
+// const deleteItem = model => {
+//   console.log('delete:', model);
+// };
 
-const handleClick = e => {
-  if (e.target === e.currentTarget) return;
+// const handleClick = e => {
+//   if (e.target === e.currentTarget) return;
 
-  const parent = e.target.closest('li');
-  const action = e.target.dataset.name;
-  const model = parent.dataset.model;
+//   const parent = e.target.closest('li');
+//   const action = e.target.dataset.name;
+//   const model = parent.dataset.model;
 
-  switch (action) {
-    case 'view':
-      viewItem(model);
-      break;
+//   switch (action) {
+//     case 'view':
+//       viewItem(model);
+//       break;
 
-    case 'delete':
-      deleteItem(model);
-      break;
-  }
-};
+//     case 'delete':
+//       deleteItem(model);
+//       break;
+//   }
+// };
 
-// console.log(students);
-render();
+// // console.log(students);
+// render();
 
-refs.studentsList.addEventListener('click', handleClick);
+// refs.studentsList.addEventListener('click', handleClick);
+
+// Потрібно отримати URL адресу із адресного рядка бразуера.
+// Далі необхідно параметри запиту записати в об'єкт  (query) - ключ, значення (axios)
+
+// const url =
+//   'https://www.npmjs.com/?query=axios&version=0.3&module=render&size=32&date=12212183311';
+
+// const link = new URL(url);
+
+// const search = link.search.slice(1);
+// const arrQuery = search.split('&');
+// console.log(arrQuery);
+
+// const objQuery = arrQuery.reduce((obj, item) => {
+//   const [key, value] = item.split('=');
+
+//   console.log(obj);
+
+//   obj[key] = value;
+//   return obj;
+// }, {});
+
+// console.log(link);
+
+// console.log(window.location);
+
+// Перетворіть масив об’єктів виборців на підрахунок кількості людей, які проголосували
+
+// function totalVotes(arr) {
+//   return voters.filter(({ voted }) => voted).length;
+// }
+
+// const voters = [
+//   { name: 'Bob', age: 30, voted: true },
+//   { name: 'Jake', age: 32, voted: true },
+//   { name: 'Kate', age: 25, voted: false },
+//   { name: 'Sam', age: 20, voted: false },
+//   { name: 'Phil', age: 21, voted: true },
+//   { name: 'Ed', age: 55, voted: true },
+//   { name: 'Tami', age: 54, voted: true },
+//   { name: 'Mary', age: 31, voted: false },
+//   { name: 'Becky', age: 43, voted: false },
+//   { name: 'Joey', age: 41, voted: true },
+//   { name: 'Jeff', age: 30, voted: true },
+//   { name: 'Zack', age: 19, voted: false },
+// ];
+
+// console.log(totalVotes(voters)); // 7
