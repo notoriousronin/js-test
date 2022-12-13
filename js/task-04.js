@@ -16,7 +16,7 @@ increment.addEventListener("click", () => {
 });
 
 // const valueMinus = function () {
-//   counterValue.value -= -1;
+//   counterValue.value -= 1;
 //   counterValue.textContent = counterValue.value;
 // };
 
