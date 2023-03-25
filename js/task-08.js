@@ -2,7 +2,7 @@ const formEl = document.querySelector(".login-form");
 
 formEl.addEventListener("submit", makeSub);
 
-function makeSub(e) {
+function makeSub() {
   e.preventDefault();
 
   const {
