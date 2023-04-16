@@ -1,12 +1,21 @@
-const liEl = document.querySelectorAll(".item");
-const list = document.querySelector("#categories");
-const allItems = list.children.length;
+console.log("sync1");
+console.log("sync1");
+setTimeout(
+  () => Promise.resolve(true).then(() => console.log("Promise Timeout1")),
+  0
+);
+setTimeout(() => console.log("Timeout1"), 0);
+Promise.resolve(true).then(() => console.log("Promise1"));
+console.log("sync2");
 
-console.log(`Number of categories: ${allItems}`);
+// sync1
+// sync2
+// Promise1
+// Timeout1
+// PromiseTimeout1
 
-liEl.forEach((item) => {
-  console.log("Category:", item.firstElementChild.textContent);
-
-  const elements = item.querySelectorAll("ul > li");
-  console.log("Elements:", elements.length);
-});
+//sync1
+//sonc2
+//promise 1
+//
+//
